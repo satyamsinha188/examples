@@ -55,6 +55,7 @@ func TestCleanupCommands(t *testing.T){
 
 	//truncate the file
 	truncateFile(fileName)
+	truncateFile(cleanedUpTasksFile)
 
 	if taskCount !=2 {
 		t.Fail()
